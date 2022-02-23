@@ -1,0 +1,12 @@
+# /api/v1/pods
+apiVersion: v1          # /api/v1
+kind: Pod               # /pods
+metadata:
+  namespace: default    # /namespaces/default
+  name: demo            # /demo
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.20-alpine
+    ports:
+    - containerPort: 80
